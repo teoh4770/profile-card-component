@@ -18,7 +18,7 @@
 ## Overview
 
 ### Links
-
+- [Click the link here](https://teoh4770.github.io/profile-card-component/)
 
 ### Code	
 CSS
