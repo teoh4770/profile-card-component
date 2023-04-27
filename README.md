@@ -1,33 +1,14 @@
 # Frontend Mentor - Profile card component
 
-![Design preview for the Profile card component coding challenge](./design/desktop-preview.jpg)
-
-## Welcome! 👋
-
-Thanks for checking out this front-end coding challenge.
-
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
-
-**To do this challenge, you need a basic understanding of HTML and CSS.**
-
-## The challenge
-
-Your challenge is to build out this profile card component and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+<img width="420" alt="Screenshot 2023-04-27 at 1 59 48 AM" src="https://user-images.githubusercontent.com/98545971/234772624-42533ed4-a3d4-49c2-a31f-ee518c4a9df9.png">
 
 # Frontend Mentor - Profile card component solution
-
-This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
+  - [Code](#code)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -36,20 +17,36 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ## Overview
 
-### The challenge
-
-Your challenge is to build out this Profile card component and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
-
-- View the optimal layout depending on their device's screen size
-- See hover states for interactive elements.
-
-### Screenshot
-
 ### Links
+
+
+### Code
+HTML
+	<div class="card__stats">
+		<div class="card__stats-container">
+		  <div class="card__stats-value font-bold">80k</div>
+		  <div class="card__text font-small">followers</div>
+		</div>
+		<div class="card__stats-container">
+		  <div class="card__stats-value font-bold">803k</div>
+		  <div class="card__text font-small">likes</div>
+		</div>
+		<div class="card__stats-container">
+		  <div class="card__stats-value font-bold">1.4k</div>
+		  <div class="card__text font-small">photos</div>
+		</div>
+	</div>
+	
+CSS
+
+	.card__avatar-container:hover ~ .hover--on {
+	  display: none;
+	}
+
+	.card__avatar-container:hover ~ .hover--off {
+	  display: block;
+	}
+
 
 ## My process
 
