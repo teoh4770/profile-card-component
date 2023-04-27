@@ -54,6 +54,7 @@ CSS
 - [BEM 101](https://sparkbox.com/foundry/bem_by_example) - BEM 101
 - [Affect another element on hover CSS](https://simplernerd.com/css-affect-another-element-on-hover/) - Affect another element on hover CSS
 - [Change image of img tag in CSS: content](https://developer.mozilla.org/en-US/docs/Web/CSS/content) - Using the content CSS property, and replace the img with a new url
+- [Affect other element on hover in CSS](https://logfetch.com/css-affect-another-element-on-hover/)
 
 ## Attribute
 
