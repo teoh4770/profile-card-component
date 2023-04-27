@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&family=Kumbh+Sans:wght@400;700&display=swap");
+/* use 400 and 700 Kumbh Sans */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+  6. update the main font type
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+  /*** colors ***/
+
+  /* primary */
+  --cyan: hsl(185, 75%, 39%);
+  --dark-gray: hsl(140, 29%, 16%);
+  --light-gray: hsl(227, 10%, 46%);
+  --green: #56de9a;
+  /* neutral */
+  --gray: hsl(148, 8%, 34%);
+  --white: hsl(120, 3%, 95%);
+  --purple: hsla(321, 77%, 80%, 1);
+
+  /*** font ***/
+  --fs-normal: 18px;
+  --fs-medium: 15px;
+  --fs-small: 12px;
+  --ff-sans: "Kumbh Sans", serif;
+  --fw-bold: 700;
+}
+
+/* utility class */
+.font-bold {
+  font-weight: var(--fw-bold);
+}
+
+.font-medium {
+  font-size: var(--fs-medium);
+}
+
+.font-small {
+  font-size: var(--fs-small);
+}
+
+.color-light-gray {
+  color: var(--light-gray);
+}
+
+.color-primary {
+  color: var(--primary-color);
+}
+
+.hidden {
+  display: none;
+}
+/* end utility */
+
+/* general styling */
+body {
+  font-size: var(--fs-normal);
+  font-family: var(--ff-sans);
+  color: var(--dark-gray);
+  background: url(./images/bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  --card-width: 300px;
+  --primary-color: var(--green);
+  width: var(--card-width, 300px);
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-inline: 1rem;
+  box-shadow: 0 0 20px;
+}
+
+.card__top-background {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+}
+
+.card__top-background:hover {
+  transform: scaleX(-1);
+}
+
+.card__bottom-section {
+  background-color: var(--white);
+  padding: 4rem 2rem 1.5rem;
+  position: relative;
+}
+
+.card__avatar-container {
+  --avatar-width: 100px;
+  width: var(--avatar-width, 100px);
+  aspect-ratio: 1;
+  border: 5px solid var(--dark-gray);
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card__avatar {
+  position: relative;
+  width: 100%;
+  position: relative;
+  transform: scale(1.3);
+  transition: ease-in 0.5s;
+}
+
+.card__avatar-container:hover > .card__avatar {
+  transform: scale(1) rotate(30deg);
+  transition: ease-out 0.5s;
+  content: url(./images/will-hover.png);
+}
+
+.hover--off {
+  display: none;
+}
+
+.card__avatar-container:hover ~ .hover--on {
+  display: none;
+}
+
+.card__avatar-container:hover ~ .hover--off {
+  display: block;
+}
+
+.card__divider {
+  border: 0.95px solid var(--light-gray);
+  margin: 1rem 0;
+}
+
+.card__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 0.5rem;
+}
+
+.card__stats-container:hover > .card__text {
+  color: var(--primary-color);
+}
+
+@media (max-width: 250px) {
+  .card__stats {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

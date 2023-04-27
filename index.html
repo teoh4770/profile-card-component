@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card Component Main | CheeKianTeoh</title>
+  <link rel="icon" href="./images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="card" aria-label="Profile Card">
+
+    <!-- top section: contain the profile pic and the foreground -->
+    <div class="card__top-section">
+      <img class="card__top-background" src="./images/bg-pattern-card.webp" alt="background pattern">
+    </div>
+    <!-- bottom section: contain the profile and social info -->
+    <div class="card__bottom-section">
+      <div class="card__avatar-container">
+        <img class="card__avatar" src="./images/will.jpg" alt="Profile Photo">
+      </div>
+
+      <div class="hover--on">
+        <span class="card__profile-name font-bold">Will Smith</span>
+        <span class="card__profile-age color-light-gray">22</span>
+        <div class="card__profile-city  font-medium color-light-gray">philadelphia</div>
+      </div>
+      <div class="hover--off">
+        <span class="card__profile-name font-bold color-primary">Fresh Prince</span>
+        <span class="card__profile-age color-light-gray">22</span>
+        <div class="card__profile-city  font-medium color-light-gray">Bel-Air</div>
+      </div>
+      <hr class="card__divider color-light-gray">
+      <div class="card__stats">
+        <div class="card__stats-container">
+          <div class="card__stats-value font-bold">80k</div>
+          <div class="card__text font-small">followers</div>
+        </div>
+        <div class="card__stats-container">
+          <div class="card__stats-value font-bold">803k</div>
+          <div class="card__text font-small">likes</div>
+        </div>
+        <div class="card__stats-container">
+          <div class="card__stats-value font-bold">1.4k</div>
+          <div class="card__text font-small">photos</div>
+        </div>
+      </div>
+  </main>
+</body>
+
+</html>
