@@ -20,23 +20,7 @@
 ### Links
 
 
-### Code
-HTML
-	<div class="card__stats">
-		<div class="card__stats-container">
-		  <div class="card__stats-value font-bold">80k</div>
-		  <div class="card__text font-small">followers</div>
-		</div>
-		<div class="card__stats-container">
-		  <div class="card__stats-value font-bold">803k</div>
-		  <div class="card__text font-small">likes</div>
-		</div>
-		<div class="card__stats-container">
-		  <div class="card__stats-value font-bold">1.4k</div>
-		  <div class="card__text font-small">photos</div>
-		</div>
-	</div>
-	
+### Code	
 CSS
 
 	.card__avatar-container:hover ~ .hover--on {
